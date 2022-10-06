@@ -28,5 +28,13 @@
     "tcl_scripts": {"axi_master": "axi_master_design.tcl"},
     "python_drivers": {},
     "c_drivers": { "axi_master": "axi_master_design.c"}
+  },
+  
+  "vcu128": {
+    "part": "xcvu37p-fsvh2892-2L-e",
+    "tcl_scripts": {"axi_master": "axi_master_design.tcl"},
+    "python_drivers": {},
+    "c_drivers": { "axi_master": "axi_master_design.c"}
   }
+  
 }
