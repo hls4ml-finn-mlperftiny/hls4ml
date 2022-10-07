@@ -51,7 +51,7 @@ set board_name "xilinx.com:vcu128:part0:1.0"
 
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
-   create_project project_1 ${myproject}_vivado_accelerator -part xcvu37p-fsvh2892-2L-e
+   create_project project_1 ${myproject}_vivado_accelerator -part xcvu37p-fsvh2892-2L-e -force
    set_property BOARD_PART xilinx.com:vcu128:part0:1.0 [current_project]
 }
 
