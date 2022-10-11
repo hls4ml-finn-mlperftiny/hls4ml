@@ -19,12 +19,12 @@
 
 #include "data.h"
 
-#define EEMBC_POWER 1
+/*#define EEMBC_POWER 1
 
 #ifdef EEMBC_POWER
 #include "xgpio.h"       /* AXI GPIO drivers */
 
-#define PIN 0x01
+/*#define PIN 0x01
 #define GPIO_PMOD_PIN_DEVICE_ID  XPAR_GPIO_0_DEVICE_ID
 
 #define set_pin_high(InstancePtr, Mask) \
@@ -35,7 +35,7 @@
 
 XGpio Gpio;
 #endif
-
+*/
 
 //#define __DEBUG__
 
@@ -77,7 +77,7 @@ XMyproject_axi_Config *accelerator_cfg; /* TODO: design-dependent name */
 /* Accelerator initialization routine */
 void init_accelerators() {
     PRINTF("INFO: Initializing accelerator\r\n");
-    accelerator_cfg = XMyproject_axi_LookupConfig(XPAR_MYPROJECT_AXI_DEVICE_ID); /* TODO: design-dependent name */
+    accelerator_cfg = XMyproject_axi_LookupConfig(XPAR_MYPROJECT_AXI_0_DEVICE_ID); /* TODO: design-dependent name */
     if (accelerator_cfg) {
         int status  = XMyproject_axi_CfgInitialize(&accelerator, accelerator_cfg); /* TODO: design-dependent name */
         if (status != XST_SUCCESS) {
@@ -130,7 +130,7 @@ double get_elapsed_time(u64 clk_start, u64 clk_stop) {
 #endif
 
 float get_elapsed_time_ns(u64 clks) {
-    return clks * 1000000000.0/XPAR_AXI_TIMER_MCU_CLOCK_FREQ_HZ;
+    return clks * 1000000000.0/XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ;
 }
 
 
@@ -347,5 +347,4 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-
 
