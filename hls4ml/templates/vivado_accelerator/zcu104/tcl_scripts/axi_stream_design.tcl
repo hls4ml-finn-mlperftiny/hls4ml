@@ -43,14 +43,25 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
-   create_project project_1 myproj -part xczu7ev-ffvc1156-2-e -force
+   create_project project_1 ${myproject}_vivado_accelerator -part xczu7ev-ffvc1156-2-e -force
    set_property BOARD_PART xilinx.com:zcu104:part0:1.1 [current_project]
 }
 
 
+
+# Setup IP repo
+set_property  ip_repo_paths ${myproject}_prj/${hls_solution_name}/impl/ip [current_project]
+#set_property  ip_repo_paths /home/subnugler/Desktop/MICROBLAZE_TEST/Microblaze/myproject_prj/${hls_solution_name}/impl/ip [current_project]
+update_ip_catalog
+
+
+
+
+
+
 # CHANGE DESIGN NAME HERE
-variable design_name
-set design_name design_1
+#variable design_name
+#set design_name design_1
 
 # If you do not already have an existing IP Integrator design open,
 # you can create a design using the following command:
@@ -1761,4 +1772,3 @@ wait_on_run -timeout 360 impl_1
 
 #open_run impl_1
 report_utilization -file util.rpt -hierarchical -hierarchical_percentages
-
