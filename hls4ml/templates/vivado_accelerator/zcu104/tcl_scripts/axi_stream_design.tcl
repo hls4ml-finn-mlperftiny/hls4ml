@@ -213,7 +213,6 @@ proc create_hier_cell_hier_0 { parentCell nameHier } {
    CONFIG.c_m_axis_mm2s_tdata_width {32} \
    CONFIG.c_mm2s_burst_size {256} \
    CONFIG.c_s2mm_burst_size {256} \
-   CONFIG.c_s_axis_s2mm_tdata_width {32} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
  ] $axi_dma_0
@@ -808,10 +807,8 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__ACTUAL__IP {1} \
    CONFIG.PSU__ACT_DDR_FREQ_MHZ {1066.560059} \
    CONFIG.PSU__AFI0_COHERENCY {0} \
-   CONFIG.PSU__AFI1_COHERENCY {0} \
    CONFIG.PSU__AUX_REF_CLK__FREQMHZ {33.333} \
    CONFIG.PSU__CAN0_LOOP_CAN1__ENABLE {0} \
-   CONFIG.PSU__CAN0__GRP_CLK__ENABLE {0} \
    CONFIG.PSU__CAN0__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__CAN1__GRP_CLK__ENABLE {0} \
    CONFIG.PSU__CAN1__PERIPHERAL__ENABLE {1} \
@@ -971,7 +968,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__SRCSEL {IOPLL} \
    CONFIG.PSU__CRL_APB__CSU_PLL_CTRL__ACT_FREQMHZ {180} \
    CONFIG.PSU__CRL_APB__CSU_PLL_CTRL__DIVISOR0 {3} \
-   CONFIG.PSU__CRL_APB__CSU_PLL_CTRL__FREQMHZ {180} \
    CONFIG.PSU__CRL_APB__CSU_PLL_CTRL__SRCSEL {SysOsc} \
    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__ACT_FREQMHZ {249.975021} \
    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__DIVISOR0 {6} \
@@ -1059,18 +1055,12 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ {100} \
    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__DIVISOR0 {4} \
    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__DIVISOR1 {1} \
-   CONFIG.PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ {100} \
-   CONFIG.PSU__CRL_APB__PL1_REF_CTRL__SRCSEL {RPLL} \
    CONFIG.PSU__CRL_APB__PL2_REF_CTRL__ACT_FREQMHZ {100} \
    CONFIG.PSU__CRL_APB__PL2_REF_CTRL__DIVISOR0 {4} \
    CONFIG.PSU__CRL_APB__PL2_REF_CTRL__DIVISOR1 {1} \
-   CONFIG.PSU__CRL_APB__PL2_REF_CTRL__FREQMHZ {100} \
-   CONFIG.PSU__CRL_APB__PL2_REF_CTRL__SRCSEL {RPLL} \
    CONFIG.PSU__CRL_APB__PL3_REF_CTRL__ACT_FREQMHZ {100} \
    CONFIG.PSU__CRL_APB__PL3_REF_CTRL__DIVISOR0 {4} \
    CONFIG.PSU__CRL_APB__PL3_REF_CTRL__DIVISOR1 {1} \
-   CONFIG.PSU__CRL_APB__PL3_REF_CTRL__FREQMHZ {100} \
-   CONFIG.PSU__CRL_APB__PL3_REF_CTRL__SRCSEL {RPLL} \
    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__ACT_FREQMHZ {124.987511} \
    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__DIVISOR0 {12} \
    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__DIVISOR1 {1} \
@@ -1134,33 +1124,19 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__SRCSEL {IOPLL} \
    CONFIG.PSU__CRL_APB__USB3__ENABLE {1} \
    CONFIG.PSU__CSUPMU__PERIPHERAL__VALID {1} \
-   CONFIG.PSU__CSU_COHERENCY {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_0__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_0__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_10__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_10__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_11__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_11__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_12__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_12__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_1__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_1__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_2__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_2__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_3__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_3__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_4__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_4__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_5__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_5__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_6__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_6__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_7__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_7__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_8__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_8__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__CSU_TAMPER_9__ENABLE {0} \
-   CONFIG.PSU__CSU__CSU_TAMPER_9__ERASE_BBRAM {0} \
    CONFIG.PSU__CSU__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__DDRC__ADDR_MIRROR {0} \
    CONFIG.PSU__DDRC__AL {0} \
@@ -1244,14 +1220,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__DDRC__VREF {1} \
    CONFIG.PSU__DDR_HIGH_ADDRESS_GUI_ENABLE {1} \
    CONFIG.PSU__DDR_QOS_ENABLE {0} \
-   CONFIG.PSU__DDR_QOS_FIX_HP0_RDQOS {} \
-   CONFIG.PSU__DDR_QOS_FIX_HP0_WRQOS {} \
-   CONFIG.PSU__DDR_QOS_FIX_HP1_RDQOS {} \
-   CONFIG.PSU__DDR_QOS_FIX_HP1_WRQOS {} \
-   CONFIG.PSU__DDR_QOS_FIX_HP2_RDQOS {} \
-   CONFIG.PSU__DDR_QOS_FIX_HP2_WRQOS {} \
-   CONFIG.PSU__DDR_QOS_FIX_HP3_RDQOS {} \
-   CONFIG.PSU__DDR_QOS_FIX_HP3_WRQOS {} \
    CONFIG.PSU__DDR_QOS_HP0_RDQOS {} \
    CONFIG.PSU__DDR_QOS_HP0_WRQOS {} \
    CONFIG.PSU__DDR_QOS_HP1_RDQOS {} \
@@ -1260,9 +1228,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__DDR_QOS_HP2_WRQOS {} \
    CONFIG.PSU__DDR_QOS_HP3_RDQOS {} \
    CONFIG.PSU__DDR_QOS_HP3_WRQOS {} \
-   CONFIG.PSU__DDR_QOS_RD_HPR_THRSHLD {} \
-   CONFIG.PSU__DDR_QOS_RD_LPR_THRSHLD {} \
-   CONFIG.PSU__DDR_QOS_WR_THRSHLD {} \
    CONFIG.PSU__DDR_SW_REFRESH_ENABLED {1} \
    CONFIG.PSU__DDR__INTERFACE__FREQMHZ {533.500} \
    CONFIG.PSU__DEVICE_TYPE {EV} \
@@ -1277,21 +1242,9 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__DP__REF_CLK_FREQ {27} \
    CONFIG.PSU__DP__REF_CLK_SEL {Ref Clk3} \
    CONFIG.PSU__ENABLE__DDR__REFRESH__SIGNALS {0} \
-   CONFIG.PSU__ENET0__FIFO__ENABLE {0} \
-   CONFIG.PSU__ENET0__GRP_MDIO__ENABLE {0} \
    CONFIG.PSU__ENET0__PERIPHERAL__ENABLE {0} \
-   CONFIG.PSU__ENET0__PTP__ENABLE {0} \
-   CONFIG.PSU__ENET0__TSU__ENABLE {0} \
-   CONFIG.PSU__ENET1__FIFO__ENABLE {0} \
-   CONFIG.PSU__ENET1__GRP_MDIO__ENABLE {0} \
    CONFIG.PSU__ENET1__PERIPHERAL__ENABLE {0} \
-   CONFIG.PSU__ENET1__PTP__ENABLE {0} \
-   CONFIG.PSU__ENET1__TSU__ENABLE {0} \
-   CONFIG.PSU__ENET2__FIFO__ENABLE {0} \
-   CONFIG.PSU__ENET2__GRP_MDIO__ENABLE {0} \
    CONFIG.PSU__ENET2__PERIPHERAL__ENABLE {0} \
-   CONFIG.PSU__ENET2__PTP__ENABLE {0} \
-   CONFIG.PSU__ENET2__TSU__ENABLE {0} \
    CONFIG.PSU__ENET3__FIFO__ENABLE {0} \
    CONFIG.PSU__ENET3__GRP_MDIO__ENABLE {1} \
    CONFIG.PSU__ENET3__GRP_MDIO__IO {MIO 76 .. 77} \
@@ -1326,12 +1279,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__FTM__CTI_OUT_3 {0} \
    CONFIG.PSU__FTM__GPI {0} \
    CONFIG.PSU__FTM__GPO {0} \
-   CONFIG.PSU__GEM0_COHERENCY {0} \
-   CONFIG.PSU__GEM0_ROUTE_THROUGH_FPD {0} \
-   CONFIG.PSU__GEM1_COHERENCY {0} \
-   CONFIG.PSU__GEM1_ROUTE_THROUGH_FPD {0} \
-   CONFIG.PSU__GEM2_COHERENCY {0} \
-   CONFIG.PSU__GEM2_ROUTE_THROUGH_FPD {0} \
    CONFIG.PSU__GEM3_COHERENCY {0} \
    CONFIG.PSU__GEM3_ROUTE_THROUGH_FPD {0} \
    CONFIG.PSU__GEM__TSU__ENABLE {0} \
@@ -1353,7 +1300,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__GPIO2_MIO__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__GPIO_EMIO_WIDTH {1} \
    CONFIG.PSU__GPIO_EMIO__PERIPHERAL__ENABLE {0} \
-   CONFIG.PSU__GPIO_EMIO__PERIPHERAL__IO {<Select>} \
    CONFIG.PSU__GPIO_EMIO__WIDTH {[94:0]} \
    CONFIG.PSU__GPU_PP0__POWER__ON {1} \
    CONFIG.PSU__GPU_PP1__POWER__ON {1} \
@@ -1403,22 +1349,13 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__IRQ_P2F_APU_PMU__INT {0} \
    CONFIG.PSU__IRQ_P2F_APU_REGS__INT {0} \
    CONFIG.PSU__IRQ_P2F_ATB_LPD__INT {0} \
-   CONFIG.PSU__IRQ_P2F_CAN0__INT {0} \
    CONFIG.PSU__IRQ_P2F_CAN1__INT {0} \
    CONFIG.PSU__IRQ_P2F_CLKMON__INT {0} \
    CONFIG.PSU__IRQ_P2F_CSUPMU_WDT__INT {0} \
-   CONFIG.PSU__IRQ_P2F_CSU_DMA__INT {0} \
-   CONFIG.PSU__IRQ_P2F_CSU__INT {0} \
    CONFIG.PSU__IRQ_P2F_DDR_SS__INT {0} \
    CONFIG.PSU__IRQ_P2F_DPDMA__INT {0} \
    CONFIG.PSU__IRQ_P2F_DPORT__INT {0} \
    CONFIG.PSU__IRQ_P2F_EFUSE__INT {0} \
-   CONFIG.PSU__IRQ_P2F_ENT0_WAKEUP__INT {0} \
-   CONFIG.PSU__IRQ_P2F_ENT0__INT {0} \
-   CONFIG.PSU__IRQ_P2F_ENT1_WAKEUP__INT {0} \
-   CONFIG.PSU__IRQ_P2F_ENT1__INT {0} \
-   CONFIG.PSU__IRQ_P2F_ENT2_WAKEUP__INT {0} \
-   CONFIG.PSU__IRQ_P2F_ENT2__INT {0} \
    CONFIG.PSU__IRQ_P2F_ENT3_WAKEUP__INT {0} \
    CONFIG.PSU__IRQ_P2F_ENT3__INT {0} \
    CONFIG.PSU__IRQ_P2F_FPD_APB__INT {0} \
@@ -1432,7 +1369,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__IRQ_P2F_LPD_APB__INT {0} \
    CONFIG.PSU__IRQ_P2F_LPD_APM__INT {0} \
    CONFIG.PSU__IRQ_P2F_LP_WDT__INT {0} \
-   CONFIG.PSU__IRQ_P2F_NAND__INT {0} \
    CONFIG.PSU__IRQ_P2F_OCM_ERR__INT {0} \
    CONFIG.PSU__IRQ_P2F_PCIE_DMA__INT {0} \
    CONFIG.PSU__IRQ_P2F_PCIE_LEGACY__INT {0} \
@@ -1447,12 +1383,8 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__IRQ_P2F_RTC_ALARM__INT {0} \
    CONFIG.PSU__IRQ_P2F_RTC_SECONDS__INT {0} \
    CONFIG.PSU__IRQ_P2F_SATA__INT {0} \
-   CONFIG.PSU__IRQ_P2F_SDIO0_WAKE__INT {0} \
-   CONFIG.PSU__IRQ_P2F_SDIO0__INT {0} \
    CONFIG.PSU__IRQ_P2F_SDIO1_WAKE__INT {0} \
    CONFIG.PSU__IRQ_P2F_SDIO1__INT {0} \
-   CONFIG.PSU__IRQ_P2F_SPI0__INT {0} \
-   CONFIG.PSU__IRQ_P2F_SPI1__INT {0} \
    CONFIG.PSU__IRQ_P2F_TTC0__INT0 {0} \
    CONFIG.PSU__IRQ_P2F_TTC0__INT1 {0} \
    CONFIG.PSU__IRQ_P2F_TTC0__INT2 {0} \
@@ -1494,13 +1426,7 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__M_AXI_GP0_SUPPORTS_NARROW_BURST {1} \
    CONFIG.PSU__M_AXI_GP1_SUPPORTS_NARROW_BURST {1} \
    CONFIG.PSU__M_AXI_GP2_SUPPORTS_NARROW_BURST {1} \
-   CONFIG.PSU__NAND_COHERENCY {0} \
-   CONFIG.PSU__NAND_ROUTE_THROUGH_FPD {0} \
-   CONFIG.PSU__NAND__CHIP_ENABLE__ENABLE {0} \
-   CONFIG.PSU__NAND__DATA_STROBE__ENABLE {0} \
    CONFIG.PSU__NAND__PERIPHERAL__ENABLE {0} \
-   CONFIG.PSU__NAND__READY0_BUSY__ENABLE {0} \
-   CONFIG.PSU__NAND__READY1_BUSY__ENABLE {0} \
    CONFIG.PSU__NAND__READY_BUSY__ENABLE {0} \
    CONFIG.PSU__NUM_FABRIC_RESETS {1} \
    CONFIG.PSU__OCM_BANK0__POWER__ON {1} \
@@ -1510,9 +1436,7 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__OVERRIDE_HPX_QOS {0} \
    CONFIG.PSU__OVERRIDE__BASIC_CLOCK {0} \
    CONFIG.PSU__PCIE__ACS_VIOLAION {0} \
-   CONFIG.PSU__PCIE__ACS_VIOLATION {0} \
    CONFIG.PSU__PCIE__AER_CAPABILITY {0} \
-   CONFIG.PSU__PCIE__ATOMICOP_EGRESS_BLOCKED {0} \
    CONFIG.PSU__PCIE__BAR0_64BIT {0} \
    CONFIG.PSU__PCIE__BAR0_ENABLE {0} \
    CONFIG.PSU__PCIE__BAR0_PREFETCHABLE {0} \
@@ -1541,20 +1465,11 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__PCIE__CLASS_CODE_INTERFACE {0x0} \
    CONFIG.PSU__PCIE__CLASS_CODE_SUB {0x4} \
    CONFIG.PSU__PCIE__CLASS_CODE_VALUE {0x60400} \
-   CONFIG.PSU__PCIE__COMPLETER_ABORT {0} \
-   CONFIG.PSU__PCIE__COMPLTION_TIMEOUT {0} \
-   CONFIG.PSU__PCIE__CORRECTABLE_INT_ERR {0} \
    CONFIG.PSU__PCIE__CRS_SW_VISIBILITY {1} \
    CONFIG.PSU__PCIE__DEVICE_ID {0xD021} \
    CONFIG.PSU__PCIE__DEVICE_PORT_TYPE {Root Port} \
-   CONFIG.PSU__PCIE__ECRC_CHECK {0} \
-   CONFIG.PSU__PCIE__ECRC_ERR {0} \
-   CONFIG.PSU__PCIE__ECRC_GEN {0} \
    CONFIG.PSU__PCIE__EROM_ENABLE {0} \
    CONFIG.PSU__PCIE__EROM_VAL {0x0} \
-   CONFIG.PSU__PCIE__FLOW_CONTROL_ERR {0} \
-   CONFIG.PSU__PCIE__FLOW_CONTROL_PROTOCOL_ERR {0} \
-   CONFIG.PSU__PCIE__HEADER_LOG_OVERFLOW {0} \
    CONFIG.PSU__PCIE__INTX_GENERATION {0} \
    CONFIG.PSU__PCIE__LANE0__ENABLE {1} \
    CONFIG.PSU__PCIE__LANE0__IO {GT Lane0} \
@@ -1564,7 +1479,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__PCIE__LINK_SPEED {5.0 Gb/s} \
    CONFIG.PSU__PCIE__MAXIMUM_LINK_WIDTH {x1} \
    CONFIG.PSU__PCIE__MAX_PAYLOAD_SIZE {256 bytes} \
-   CONFIG.PSU__PCIE__MC_BLOCKED_TLP {0} \
    CONFIG.PSU__PCIE__MSIX_BAR_INDICATOR {} \
    CONFIG.PSU__PCIE__MSIX_CAPABILITY {0} \
    CONFIG.PSU__PCIE__MSIX_PBA_BAR_INDICATOR {} \
@@ -1573,29 +1487,19 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__PCIE__MSIX_TABLE_SIZE {0} \
    CONFIG.PSU__PCIE__MSI_64BIT_ADDR_CAPABLE {0} \
    CONFIG.PSU__PCIE__MSI_CAPABILITY {0} \
-   CONFIG.PSU__PCIE__MULTIHEADER {0} \
    CONFIG.PSU__PCIE__PERIPHERAL__ENABLE {1} \
    CONFIG.PSU__PCIE__PERIPHERAL__ENDPOINT_ENABLE {0} \
    CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_ENABLE {1} \
    CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_IO {MIO 31} \
-   CONFIG.PSU__PCIE__PERM_ROOT_ERR_UPDATE {0} \
-   CONFIG.PSU__PCIE__RECEIVER_ERR {0} \
-   CONFIG.PSU__PCIE__RECEIVER_OVERFLOW {0} \
    CONFIG.PSU__PCIE__REF_CLK_FREQ {100} \
    CONFIG.PSU__PCIE__REF_CLK_SEL {Ref Clk0} \
    CONFIG.PSU__PCIE__RESET__POLARITY {Active Low} \
    CONFIG.PSU__PCIE__REVISION_ID {0x0} \
    CONFIG.PSU__PCIE__SUBSYSTEM_ID {0x7} \
    CONFIG.PSU__PCIE__SUBSYSTEM_VENDOR_ID {0x10EE} \
-   CONFIG.PSU__PCIE__SURPRISE_DOWN {0} \
-   CONFIG.PSU__PCIE__TLP_PREFIX_BLOCKED {0} \
-   CONFIG.PSU__PCIE__UNCORRECTABL_INT_ERR {0} \
    CONFIG.PSU__PCIE__VENDOR_ID {0x10EE} \
    CONFIG.PSU__PJTAG__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__PL_CLK0_BUF {TRUE} \
-   CONFIG.PSU__PL_CLK1_BUF {FALSE} \
-   CONFIG.PSU__PL_CLK2_BUF {FALSE} \
-   CONFIG.PSU__PL_CLK3_BUF {FALSE} \
    CONFIG.PSU__PL__POWER__ON {1} \
    CONFIG.PSU__PMU_COHERENCY {0} \
    CONFIG.PSU__PMU__AIBACK__ENABLE {0} \
@@ -1627,10 +1531,8 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__PMU__PLERROR__ENABLE {0} \
    CONFIG.PSU__PRESET_APPLIED {1} \
    CONFIG.PSU__PROTECTION__DDR_SEGMENTS {NONE} \
-   CONFIG.PSU__PROTECTION__DEBUG {0} \
    CONFIG.PSU__PROTECTION__ENABLE {0} \
    CONFIG.PSU__PROTECTION__FPD_SEGMENTS {SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem} \
-   CONFIG.PSU__PROTECTION__LOCK_UNUSED_SEGMENTS {0} \
    CONFIG.PSU__PROTECTION__LPD_SEGMENTS {SA:0xFF980000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF5E0000; SIZE:2560; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFFCC0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF180000; SIZE:768; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF410000; SIZE:640; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFFA70000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware| SA:0xFF9A0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware|SA:0xFF5E0000 ; SIZE:2560; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem|SA:0xFFCC0000 ; SIZE:64; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem|SA:0xFF180000 ; SIZE:768; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem|SA:0xFF9A0000 ; SIZE:64; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem} \
    CONFIG.PSU__PROTECTION__MASTERS {USB1:NonSecure;0|USB0:NonSecure;1|S_AXI_LPD:NA;0|S_AXI_HPC1_FPD:NA;0|S_AXI_HPC0_FPD:NA;1|S_AXI_HP3_FPD:NA;0|S_AXI_HP2_FPD:NA;0|S_AXI_HP1_FPD:NA;0|S_AXI_HP0_FPD:NA;0|S_AXI_ACP:NA;0|S_AXI_ACE:NA;0|SD1:NonSecure;1|SD0:NonSecure;0|SATA1:NonSecure;1|SATA0:NonSecure;1|RPU1:Secure;1|RPU0:Secure;1|QSPI:NonSecure;1|PMU:NA;1|PCIe:NonSecure;1|NAND:NonSecure;0|LDMA:NonSecure;1|GPU:NonSecure;1|GEM3:NonSecure;1|GEM2:NonSecure;0|GEM1:NonSecure;0|GEM0:NonSecure;0|FDMA:NonSecure;1|DP:NonSecure;1|DAP:NA;1|Coresight:NA;1|CSU:NA;1|APU:NA;1} \
    CONFIG.PSU__PROTECTION__MASTERS_TZ {GEM0:NonSecure|SD1:NonSecure|GEM2:NonSecure|GEM1:NonSecure|GEM3:NonSecure|PCIe:NonSecure|DP:NonSecure|NAND:NonSecure|GPU:NonSecure|USB1:NonSecure|USB0:NonSecure|LDMA:NonSecure|FDMA:NonSecure|QSPI:NonSecure|SD0:NonSecure} \
@@ -1659,17 +1561,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__SATA__REF_CLK_FREQ {125} \
    CONFIG.PSU__SATA__REF_CLK_SEL {Ref Clk1} \
    CONFIG.PSU__SAXIGP0__DATA_WIDTH {32} \
-   CONFIG.PSU__SAXIGP1__DATA_WIDTH {128} \
-   CONFIG.PSU__SAXIGP2__DATA_WIDTH {128} \
-   CONFIG.PSU__SAXIGP3__DATA_WIDTH {128} \
-   CONFIG.PSU__SAXIGP4__DATA_WIDTH {128} \
-   CONFIG.PSU__SAXIGP5__DATA_WIDTH {128} \
-   CONFIG.PSU__SAXIGP6__DATA_WIDTH {128} \
-   CONFIG.PSU__SD0_COHERENCY {0} \
-   CONFIG.PSU__SD0_ROUTE_THROUGH_FPD {0} \
-   CONFIG.PSU__SD0__GRP_CD__ENABLE {0} \
-   CONFIG.PSU__SD0__GRP_POW__ENABLE {0} \
-   CONFIG.PSU__SD0__GRP_WP__ENABLE {0} \
    CONFIG.PSU__SD0__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__SD0__RESET__ENABLE {0} \
    CONFIG.PSU__SD1_COHERENCY {0} \
@@ -1685,13 +1576,7 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__SD1__RESET__ENABLE {0} \
    CONFIG.PSU__SD1__SLOT_TYPE {SD 3.0} \
    CONFIG.PSU__SPI0_LOOP_SPI1__ENABLE {0} \
-   CONFIG.PSU__SPI0__GRP_SS0__ENABLE {0} \
-   CONFIG.PSU__SPI0__GRP_SS1__ENABLE {0} \
-   CONFIG.PSU__SPI0__GRP_SS2__ENABLE {0} \
    CONFIG.PSU__SPI0__PERIPHERAL__ENABLE {0} \
-   CONFIG.PSU__SPI1__GRP_SS0__ENABLE {0} \
-   CONFIG.PSU__SPI1__GRP_SS1__ENABLE {0} \
-   CONFIG.PSU__SPI1__GRP_SS2__ENABLE {0} \
    CONFIG.PSU__SPI1__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__SWDT0__CLOCK__ENABLE {0} \
    CONFIG.PSU__SWDT0__PERIPHERAL__ENABLE {1} \
@@ -1706,7 +1591,6 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__TCM1A__POWER__ON {1} \
    CONFIG.PSU__TCM1B__POWER__ON {1} \
    CONFIG.PSU__TESTSCAN__PERIPHERAL__ENABLE {0} \
-   CONFIG.PSU__TRACE_PIPELINE_WIDTH {8} \
    CONFIG.PSU__TRACE__INTERNAL_WIDTH {32} \
    CONFIG.PSU__TRACE__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__TRISTATE__INVERTED {1} \
@@ -1742,25 +1626,15 @@ proc create_root_design { parentCell } {
    CONFIG.PSU__USB0__REF_CLK_FREQ {26} \
    CONFIG.PSU__USB0__REF_CLK_SEL {Ref Clk2} \
    CONFIG.PSU__USB0__RESET__ENABLE {0} \
-   CONFIG.PSU__USB1_COHERENCY {0} \
    CONFIG.PSU__USB1__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__USB1__RESET__ENABLE {0} \
    CONFIG.PSU__USB2_0__EMIO__ENABLE {0} \
-   CONFIG.PSU__USB2_1__EMIO__ENABLE {0} \
    CONFIG.PSU__USB3_0__EMIO__ENABLE {0} \
    CONFIG.PSU__USB3_0__PERIPHERAL__ENABLE {1} \
    CONFIG.PSU__USB3_0__PERIPHERAL__IO {GT Lane2} \
-   CONFIG.PSU__USB3_1__EMIO__ENABLE {0} \
-   CONFIG.PSU__USB3_1__PERIPHERAL__ENABLE {0} \
    CONFIG.PSU__USB__RESET__MODE {Boot Pin} \
    CONFIG.PSU__USB__RESET__POLARITY {Active Low} \
    CONFIG.PSU__USE_DIFF_RW_CLK_GP0 {0} \
-   CONFIG.PSU__USE_DIFF_RW_CLK_GP1 {0} \
-   CONFIG.PSU__USE_DIFF_RW_CLK_GP2 {0} \
-   CONFIG.PSU__USE_DIFF_RW_CLK_GP3 {0} \
-   CONFIG.PSU__USE_DIFF_RW_CLK_GP4 {0} \
-   CONFIG.PSU__USE_DIFF_RW_CLK_GP5 {0} \
-   CONFIG.PSU__USE_DIFF_RW_CLK_GP6 {0} \
    CONFIG.PSU__USE__ADMA {0} \
    CONFIG.PSU__USE__APU_LEGACY_INTERRUPT {0} \
    CONFIG.PSU__USE__AUDIO {0} \
@@ -1839,19 +1713,21 @@ proc create_root_design { parentCell } {
   connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins rst_ps8_0_99M/ext_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
 
   # Create address segments
-  assign_bd_address -offset 0xA0000000 -range 0x00010000 -target_address_space [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs hier_0/axi_dma_0/S_AXI_LITE/Reg] -force
-  assign_bd_address -offset 0x00000000 -range 0x80000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW] -force
-  assign_bd_address -offset 0x00000000 -range 0x80000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW] -force
-  assign_bd_address -offset 0xE0000000 -range 0x10000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_PCIE_LOW] -force
-  assign_bd_address -offset 0xE0000000 -range 0x10000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_PCIE_LOW] -force
-  assign_bd_address -offset 0xC0000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_QSPI] -force
-  assign_bd_address -offset 0xC0000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_QSPI] -force
+  create_bd_addr_seg -range 0x00001000 -offset 0xA0000000 [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs hier_0/axi_dma_0/S_AXI_LITE/Reg] SEG_axi_dma_0_Reg
+  create_bd_addr_seg -range 0x80000000 -offset 0x00000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW] SEG_zynq_ultra_ps_e_0_HPC0_DDR_LOW
+  create_bd_addr_seg -range 0x80000000 -offset 0x00000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW] SEG_zynq_ultra_ps_e_0_HPC0_DDR_LOW
+  create_bd_addr_seg -range 0x10000000 -offset 0xE0000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_PCIE_LOW] SEG_zynq_ultra_ps_e_0_HPC0_PCIE_LOW
+  create_bd_addr_seg -range 0x10000000 -offset 0xE0000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_PCIE_LOW] SEG_zynq_ultra_ps_e_0_HPC0_PCIE_LOW
+  create_bd_addr_seg -range 0x20000000 -offset 0xC0000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_QSPI] SEG_zynq_ultra_ps_e_0_HPC0_QSPI
+  create_bd_addr_seg -range 0x20000000 -offset 0xC0000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_QSPI] SEG_zynq_ultra_ps_e_0_HPC0_QSPI
 
   # Exclude Address Segments
-  exclude_bd_addr_seg -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH]
-  exclude_bd_addr_seg -offset 0xFF000000 -range 0x01000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM]
-  exclude_bd_addr_seg -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH]
-  exclude_bd_addr_seg -offset 0xFF000000 -range 0x01000000 -target_address_space [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM]
+  create_bd_addr_seg -range 0x01000000 -offset 0xFF000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_MM2S] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM] SEG_zynq_ultra_ps_e_0_HPC0_LPS_OCM
+  exclude_bd_addr_seg [get_bd_addr_segs hier_0/axi_dma_0/Data_MM2S/SEG_zynq_ultra_ps_e_0_HPC0_LPS_OCM]
+
+  create_bd_addr_seg -range 0x01000000 -offset 0xFF000000 [get_bd_addr_spaces hier_0/axi_dma_0/Data_S2MM] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM] SEG_zynq_ultra_ps_e_0_HPC0_LPS_OCM
+  exclude_bd_addr_seg [get_bd_addr_segs hier_0/axi_dma_0/Data_S2MM/SEG_zynq_ultra_ps_e_0_HPC0_LPS_OCM]
+
 
 
   # Restore current instance
@@ -1871,6 +1747,7 @@ create_root_design ""
 
 
 
+
 #WRAP THE MODEL
 
 make_wrapper -files [get_files ./${myproject}_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
@@ -1884,5 +1761,4 @@ wait_on_run -timeout 360 impl_1
 
 #open_run impl_1
 report_utilization -file util.rpt -hierarchical -hierarchical_percentages
-
 
